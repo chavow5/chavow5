@@ -1,1 +1,16 @@
-este es un archivo de prueba
+ideas para un portafolio personal 
+
+landing page 
+
+pag como referencia 
+https://dunks1980.com
+
+Bienvenidos 
+
+Mi nombre es David Ramírez, soy un desarrollador web full stack con sede en La Rioja, Argentina. He trabajado en el desarrollo de sitios web y plataformas de comercio electrónico, aplicando mis habilidades en tecnologías como React, JavaScript, HTML, CSS y Python. Mi enfoque está en crear soluciones web eficientes y funcionales, garantizando una experiencia de usuario fluida y atractiva. Desde la creación de interfaces intuitivas hasta la integración de bases de datos, me apasiona llevar proyectos a su máximo potencial.
+
+alternativa
+
+Soy David Ramírez, un apasionado desarrollador web full stack radicado en La Rioja, Argentina. Con experiencia en la creación de soluciones digitales para e-commerce y sitios web dinámicos, combino creatividad y funcionalidad utilizando tecnologías como React, JavaScript, HTML, CSS, bases de datos y Python. Mi objetivo es desarrollar plataformas que no solo se vean profesionales, sino que también ofrezcan experiencias intuitivas y sin complicaciones para los usuarios. Cada proyecto que emprendo es una oportunidad para optimizar rendimiento, mejorar la usabilidad y aportar innovación al mundo digital.
+
+dividir 2 secciones una de deporte y otra tecnologia
