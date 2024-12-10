@@ -1,5 +1,5 @@
 # David Ramirez
-📖actualmente estudiando<br>🤝 Ayudando a programadores<br>🌱 Cursando programacion web full stack<br> 🌱 Cursando Mern stack <br>⚡ Fun fact<br>🎮 Games<br>🚲 Deportista
+📖actualmente estudiando<br>🌱 Programador web full stack<br> 🌱 Cursando Mern stack <br>⚡ Fun fact<br>🎮 Games<br>🚲 Deportista
 
 ## 🌐 Socials:
 [![LinkedIn David Ramirez](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/david-ramirez-031015253/) 
