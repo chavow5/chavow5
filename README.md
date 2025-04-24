@@ -1,10 +1,10 @@
 # David Ramirez
-<>💻 Programador web full stack<br>
+<>💻 Programador web full stack DIGITAL HOUSE<br>
 <>💻 Tecnicatura en Programacion UTN <br>
 ⚡ Fun fact<br>
 🎮 Games <br>
 🚲 Deportista <br>
-🚗💨subite a programar juntos 😉
+🚗💨subite a Codear juntos 😉
 
 ## 🌐 Socials:
 [![LinkedIn David Ramirez](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/david-ramirez-031015253/) 
