@@ -1,6 +1,6 @@
 const AboutMe = () => {
   return (
-    <section className="bg-[#121212] text-white py-12 px-6">
+    <section className="bg-[#1e1e1e] text-white py-12 px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10">
         
         {/* info principal */}
@@ -55,6 +55,8 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
+
+        
 
         {/* segunda parte de informacion */}
         <aside className="w-full md:w-80 bg-[#1e1e1e] rounded-lg p-6">
