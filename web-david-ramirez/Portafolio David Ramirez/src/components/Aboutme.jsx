@@ -14,9 +14,15 @@ const skills = [
   { name: "Python", icon: <FaPython /> },
 ];
 
+const idiomas = [
+  { idioma: "Español", nivel: "Nativo", icon: "🇦🇷" },
+  { idioma: "Inglés", nivel: "B1 - B2 ", icon: "🇺🇸" },
+];
+
 const AboutMe = () => {
   return (
-    <section className="bg-[#1e1e1e] text-white py-12 px-6">
+    <section id="aboutme" className="bg-[#1e1e1e] text-white py-12 px-6">
+      <h2 className="text-4xl font-bold mb-8 text-center">Sobre Mi</h2>
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10">
         {/* info principal */}
         <div className="flex-1">
@@ -46,7 +52,6 @@ const AboutMe = () => {
               prácticas de desarrollo.
             </p>
           </div>
-
           <div>
             <h3 className="text-xl font-semibold mb-2">Habilidades Tecnicas</h3>
             <div className="flex flex-wrap gap-2">
@@ -56,7 +61,6 @@ const AboutMe = () => {
                   className="bg-gray-800 text-white text-sm px-3 py-1 rounded-full flex items-center gap-2"
                 >
                   {skill.icon}
-                  {/* Si querés mostrar también el nombre, dejá esto: */}
                   {skill.name}
                 </span>
               ))}
@@ -102,9 +106,6 @@ const AboutMe = () => {
             <div className="flex items-center gap-2 mb-2">
               <span>📧</span>
               <span>Davidramirezw6@gmail.com</span>
-              <br />
-              <span>📞</span>
-              <span>3804201334</span>
             </div>
             <div className="flex items-center gap-2">
               <span>📍</span>
@@ -138,6 +139,20 @@ const AboutMe = () => {
               Instagram
             </a>
           </div>
+          <div className="mt-6">
+          <h3 className="text-xl font-semibold mb-2">Idiomas</h3>
+          <div className="flex flex-wrap gap-2">
+            {idiomas.map((lang, index) => (
+              <span
+                key={index}
+                className="bg-gray-800 text-white text-sm px-3 py-1 rounded-full flex items-center gap-2"
+              >
+                {/* <span>{lang.icon}</span> */}
+                <span>{lang.idioma} - {lang.nivel}</span>
+              </span>
+            ))}
+          </div>
+        </div>
         </aside>
       </div>
     </section>

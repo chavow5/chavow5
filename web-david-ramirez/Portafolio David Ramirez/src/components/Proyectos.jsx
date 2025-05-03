@@ -8,7 +8,7 @@ const Proyectos = () => {
     fetch("https://api.github.com/users/chavow5/repos?per_page=7&sort=updated")
       .then((res) => res.json())
       .then((data) => {
-        // Filtramos repos que tengan descripción y ordenamos por fecha
+        // Filtramos repositorios que tengan descripción y ordenamos por fecha
         const filtrados = data
           .filter((repo) => repo.description)
           .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
@@ -20,7 +20,7 @@ const Proyectos = () => {
   return (
     <section id=" Mis Proyectos" className="bg-[#0d1117] text-white py-16 px-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold mb-12 text-center">Mis Proyectos</h2>
+        <h2 className="text-4xl font-bold mb-12 text-center">Mis Proyectos en GitHub</h2>
         <div className="grid gap-6 md:grid-cols-2">
           {repos.map((repo) => (
             <div
