@@ -44,7 +44,7 @@ const AboutMe = () => {
               ¡Hola! Soy un desarrollador web con experiencia en React, Tailwind
               CSS y otras tecnologías modernas. Me encanta crear experiencias
               web funcionales que resuelvan problemas reales e impacto en las
-              redes sociales.
+              redes sociales..
             </p>
             <p className="text-gray-300 mt-2">
               Mi enfoque se centra en construir interfaces intuitivas y
