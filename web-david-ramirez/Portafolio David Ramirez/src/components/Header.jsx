@@ -20,9 +20,17 @@ const Header = () => {
         <nav className="hidden md:flex space-x-8">
           <a href="#inicio" className="block hover:text-gray-300">Inicio</a>
           <a href="#aboutme" className="block hover:text-gray-300">Sobre mí</a>
-          <a href="#Proyectos" className="block hover:text-gray-300">Mis Proyectos</a>
+          <a href="#proyectos" className="block hover:text-gray-300">Mis Proyectos</a>
           <a href="#certificados" className="block hover:text-gray-300">Certificados</a>
+          <a href="#contacto" className="block hover:text-gray-300">Contacto</a>
         </nav>
+
+        {/* <li><a href="#inicio" className="hover:text-gray-300">Inicio</a></li>
+            <li><a href="#aboutme" className="hover:text-gray-300">Sobre mí</a></li>
+            <li><a href="#proyectos" className="hover:text-gray-300">Proyectos</a></li>
+            <li><a href="#certificados" className="hover:text-gray-300">Certificados</a></li>
+            <li><a href="#contacto" className="hover:text-gray-300">Contacto</a></li>
+          */}
 
         {/* Botón hamburguesa*/}
         <div className="md:hidden">
@@ -34,11 +42,13 @@ const Header = () => {
 
       {/* Navegacion celular  */}
       {menuOpen && (
-        <div className="md:hidden bg-black px-4 pb-4 space-y-2">
+        <div className="md:hidden text-center bg-black px-4 pb-4 space-y-2">
           <a href="#inicio" className="block hover:text-gray-300">Inicio</a>
           <a href="#AboutMe" className="block hover:text-gray-300">Sobre mí</a>
           <a href="#Proyectos" className="block hover:text-gray-300">Mis Proyectos</a>
           <a href="#certificados" className="block hover:text-gray-300">Certificados</a>
+          <a href="#contacto" className="block hover:text-gray-300">Contacto</a>
+          <button onClick={toggleMenu} className="mt-4 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-4 rounded-full w-full">Cerrar</button>
         </div>
       )}
     </header>

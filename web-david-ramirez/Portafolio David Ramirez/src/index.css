@@ -24,3 +24,17 @@ html {
     scroll-behavior: smooth;
   }
 
+  @layer utilities {
+    .animate-pulse-slow {
+      animation: pulseBg 10s infinite alternate;
+    }
+  
+    @keyframes pulseBg {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+  }
