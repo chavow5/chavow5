@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import fondo from "../assets/fondo2.png"; 
+import fondo from "../assets/fondo2.png";
 
 const HeroSection = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -18,7 +18,7 @@ const HeroSection = () => {
 
   return (
     <div id="inicio" className="relative min-h-screen w-full overflow-hidden">
-      {/* Fondo con zoom */}
+      {/* Fondo con zoom y blur */}
       <div
         className="absolute inset-0 w-full h-full transition-all duration-300 z-0"
         style={{
@@ -31,12 +31,12 @@ const HeroSection = () => {
       />
 
       {/* Contenido encima del fondo */}
-      <div className="relative z-10 text-white text-center p-12 pt-24">
-        <h1 className="text-5xl md:text-8xl font-bold tracking-tight text-shadow-md">
+      <div className="relative z-10 text-white flex flex-col justify-center items-start min-h-screen px-6 md:px-20 py-24">
+        <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold leading-tight drop-shadow-md">
           David Ramirez
         </h1>
-        <p className="text-lg md:text-xl uppercase font-medium mt-4 text-shadow-md">
-          Full Stack Web Developer.
+        <p className="text-lg sm:text-xl md:text-2xl mt-4 uppercase font-medium drop-shadow-md">
+           Full Stack Web Developer.
         </p>
       </div>
     </div>
