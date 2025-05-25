@@ -17,7 +17,7 @@ const proyectos = [
   {
     id: 3,
     title: 'ORIGXN',
-    image: '../images/origxn.png',
+    image: './images/orignx.png',
     link: 'https://origxn.store'
   },
   {
