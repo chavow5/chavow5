@@ -1,37 +1,36 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
 // Lista de proyectos (podés agregar más)
 const proyectos = [
   {
     id: 1,
-    title: 'Portafolio Chavo',
-    image: '/images/lomiteria.png', 
-    link: 'https://lomiteria.onrender.com'
+    title: 'Portafolio David Ramirez',
+    image: 'https://private-user-images.githubusercontent.com/98863759/447362176-ef6f948e-4bfd-4f04-8292-a6d63fd4a46a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDgyMDMyNzksIm5iZiI6MTc0ODIwMjk3OSwicGF0aCI6Ii85ODg2Mzc1OS80NDczNjIxNzYtZWY2Zjk0OGUtNGJmZC00ZjA0LTgyOTItYTZkNjNmZDRhNDZhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MjUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTI1VDE5NTYxOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWZmZmRmMjYxYzM3ZmRkYzMwMWFhMWEzYmM0YjdlOGU5N2U3MDkwNzhiYzJmNzIyNmFlYzk5MjE4NWM5OThjNzgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.RXc2FXD41EDrU0LR7Nj-24UFJ9sxnQOaQAsXM9jj_CE', 
+    link: 'https://github.com/chavow5/chavow5/tree/main/Portafolio%20David%20Ramirez'
   },
   {
     id: 2,
     title: 'Sistema de Peajes',
-    image: '/images/peajes.png',
-    link: 'https://peajes-app.netlify.app'
+    image:'https://private-user-images.githubusercontent.com/98863759/436771567-839030a6-3cbf-4d1d-9d4a-50c071a5c390.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDgyMDMzNTgsIm5iZiI6MTc0ODIwMzA1OCwicGF0aCI6Ii85ODg2Mzc1OS80MzY3NzE1NjctODM5MDMwYTYtM2NiZi00ZDFkLTlkNGEtNTBjMDcxYTVjMzkwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MjUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTI1VDE5NTczOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTgxNDU3N2RhNTBiMzVlNjQ0NmQ0MjFkYWUzYzM5YTVmNzBmYzQ3NjMwMmQyOTU4ZGM1MTgwOTRlZGRjZjE4NjcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Oh_TmPBtKVciCK3Y5ZdNaitPGSDEOBe1AHca12AQ_Hs',
+    link: 'https://github.com/chavow5/dev-squad?tab=readme-ov-file'
   },
   {
     id: 3,
     title: 'ORIGXN',
     image: '/images/origxn.png',
-    link: 'origxn.store'
+    link: 'https://origxn.store'
   },
   {
     id: 4,
     title: 'Carta de Invitacion',
-    image: '/images/invitacion.png',
-    link: 'invitacion.com'
+    image: 'https://private-user-images.githubusercontent.com/98863759/437173056-b4ba9e58-632f-4dd8-91bb-adabb55d174e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDgyMDE3MTUsIm5iZiI6MTc0ODIwMTQxNSwicGF0aCI6Ii85ODg2Mzc1OS80MzcxNzMwNTYtYjRiYTllNTgtNjMyZi00ZGQ4LTkxYmItYWRhYmI1NWQxNzRlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MjUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTI1VDE5MzAxNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNmZTRhZjA1MWFlYTY1Yzg1NGU5YzAyM2I2OGY5M2MwZmFkZGY0Y2E3ODJhZjg5N2I4MTZmZTBjZGMzMzMxZjcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.cKU-hJ3iwPt3WwwSQWFKrIfgVZF4OZV3uIuZWn4o1uE',
+    link: 'https://github.com/chavow5/invitacion.git'
   },
   {
     id: 5,
     title: 'Juego de Adivinanza',
-    image: '/images/adivino.png',
-    link: 'adivino.com'
+    image: 'https://private-user-images.githubusercontent.com/98863759/436882444-59e501d8-8154-415d-a10a-3da477da8b04.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDgyMDE2OTUsIm5iZiI6MTc0ODIwMTM5NSwicGF0aCI6Ii85ODg2Mzc1OS80MzY4ODI0NDQtNTllNTAxZDgtODE1NC00MTVkLWExMGEtM2RhNDc3ZGE4YjA0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MjUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTI1VDE5Mjk1NVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTcyZGM1NmJjYmNmZjdmODM5NmEzMTAxNWI4ZTViNDZlYjViZGZjNjEzMWU4MDk4MGU5YzdkMDEzOTRlZmZmZTAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.HXBFJ5nictCjRi_RDVvsb1oz2IU7vslE3FRFn4YStBs',
+    link: 'https://chavow5.github.io/MemoryGame/'
   }
 
 
