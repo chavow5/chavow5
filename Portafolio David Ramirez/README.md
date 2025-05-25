@@ -23,7 +23,8 @@
 
 ## 📸 Capturas
 
-> 
+>![inicio](https://github.com/user-attachments/assets/ef6f948e-4bfd-4f04-8292-a6d63fd4a46a)
+ 
 
 ## 📬 Contacto
 
