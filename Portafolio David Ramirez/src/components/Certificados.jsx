@@ -3,19 +3,19 @@ import React, { useState } from "react";
 const certificados = [
   {
     nombre: "Full Stack Web Developer - Digital House",
-    imagen: "/certificados/fullstack.png",
+    imagen: "./certificados/fullstack.png",
   },
   {
     nombre: "Desarrollo Web Responsive - Domestika",
-    imagen: "/certificados/webresponsive.png",
+    imagen: "./certificados/webresponsive.png",
   },
   {
     nombre: "Diseño Gráfico - Juventudes",
-    imagen: "/certificados/diseñografico.png",
+    imagen: "./certificados/diseñografico.png",
   },
   {
     nombre: "Programación en Javascript - Domestika",
-    imagen: "/certificados/programacion.png",
+    imagen: "./certificados/programacion.png",
   },
 ];
 
