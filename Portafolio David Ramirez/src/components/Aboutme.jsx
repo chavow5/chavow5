@@ -41,15 +41,15 @@ const AboutMe = () => {
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-2">Biografía</h3>
             <p className="text-gray-300">
-              ¡Hola! Soy un desarrollador web con experiencia en React, Tailwind
-              CSS y otras tecnologías modernas. Me encanta crear experiencias
+              ¡Hola!, Me llamo David pero algunos me conocen como <span>"Chavo"</span>, Soy un desarrollador web - software con experiencia en React, Tailwind, Boostrap
+              ,CSS y otras tecnologías modernas. Me encanta crear experiencias
               web funcionales que resuelvan problemas reales e impacto en las
               redes sociales..
             </p>
             <p className="text-gray-300 mt-2">
-              Mi enfoque se centra en construir interfaces intuitivas y
-              accesibles, con especial atención al rendimiento y las buenas
-              prácticas de desarrollo.
+              Mi enfoque se centra en construir Softwares Webs y
+              accesibles, con especial atención al rendimiento y las prácticas de desarrollo.
+              para facilitar el trabajo de cada clientes
             </p>
           </div>
           <div>
