@@ -3,14 +3,19 @@ import fondo from "../assets/fondo2.png";
 
 const HeroSection = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
-  const handleScroll = () => {
-    setScrollPosition(window.scrollY);
-  };
+  const handleScroll = () => setScrollPosition(window.scrollY);
 
   useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 640);
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+    handleResize(); // inicial
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   const scaleValue = Math.min(1 + scrollPosition * 0.0008, 1.2);
@@ -23,7 +28,7 @@ const HeroSection = () => {
         className="absolute inset-0 w-full h-full transition-all duration-300 z-0"
         style={{
           backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.5), #1e1e1e), url(${fondo})`,
-          backgroundSize: `${scaleValue * 100}%`,
+          backgroundSize: isMobile ? "cover" : `${scaleValue * 100}%`,
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           filter: `blur(${blurValue}px)`,
@@ -36,7 +41,7 @@ const HeroSection = () => {
           David Ramirez
         </h1>
         <p className="text-lg sm:text-xl md:text-2xl mt-4 uppercase font-medium drop-shadow-md">
-           Full Stack Web Developer.
+          Full Stack Web Developer.
         </p>
       </div>
     </div>

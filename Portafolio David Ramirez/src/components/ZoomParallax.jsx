@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 // plantilla para hacer zoom en imagen adaptada a mobile
 export default function ZoomParallax({ imageUrl }) {
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
+  // const [isMobile, setIsMobile] = useState(false);
 
   const handleScroll = () => {
     setScrollPosition(window.scrollY);
@@ -34,7 +34,7 @@ export default function ZoomParallax({ imageUrl }) {
           linear-gradient(to bottom, rgba(0,0,0,0.5), #1e1e1e),
           url(${imageUrl})
         `,
-        backgroundSize: isMobile ? "full" : `${scaleValue * 200}%`, // en móvil siempre cover
+        backgroundSize: isMobile ? "cover" : `${scaleValue * 200}%`, // en móvil siempre cover
         backgroundPosition: "center",
         backgroundRepeat: "repeat",
         filter: `blur(${blurValue}px)`,
